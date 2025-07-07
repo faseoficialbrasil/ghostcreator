@@ -1,77 +1,115 @@
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+/* Reset e ajustes gerais */
+* {
   margin: 0;
   padding: 0;
-  color: #333;
-  line-height: 1.6;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Cabeçalho */
 header {
-  background: #111;
-  color: #fff;
-  padding: 30px 20px;
   text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ddd;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2.5em;
-  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #222;
 }
 
 header h2 {
-  font-weight: 400;
-  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 10px;
 }
 
-.autor {
-  margin-top: 10px;
-  font-style: italic;
+header .autor {
+  font-size: 0.9rem;
+  color: #888;
 }
 
-.capa {
-  max-width: 300px;
-  margin-top: 20px;
-  border-radius: 12px;
+nav {
+  margin: 15px 0;
 }
 
-main {
-  padding: 20px;
-}
-
-h2 {
-  color: #222;
-  margin-top: 40px;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-a {
-  color: #0077cc;
+nav a {
   text-decoration: none;
+  color: #0077cc;
+  margin: 0 10px;
+  font-weight: bold;
 }
 
-a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
-.botao-download {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #0077cc;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
+/* Imagem de capa */
+.capa {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-footer {
-  background-color: #111;
+/* Seções do conteúdo */
+main section {
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+main h2 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #444;
+}
+
+main ul {
+  padding-left: 20px;
+}
+
+main ul li {
+  margin-bottom: 8px;
+}
+
+main a {
+  color: #0055aa;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+/* Botão de download */
+.botao-download {
+  display: inline-block;
+  background-color: #0077cc;
   color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.botao-download:hover {
+  background-color: #005fa3;
+}
+
+/* Rodapé */
+footer {
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
 }
