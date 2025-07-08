@@ -1,9 +1,16 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
   background-color: #f9f9f9;
   color: #333;
+  padding: 20px;
+  line-height: 1.6;
 }
 
 header {
@@ -11,10 +18,31 @@ header {
   margin-bottom: 30px;
 }
 
+h1 {
+  font-size: 2.2em;
+  color: #005fa3;
+}
+
+h2 {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.autor {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin: 15px 0;
+}
+
 nav a {
   margin: 0 10px;
   text-decoration: none;
   color: #0077cc;
+  font-weight: bold;
 }
 
 nav a:hover {
@@ -24,47 +52,8 @@ nav a:hover {
 .capa {
   max-width: 300px;
   margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.botao-download {
-  display: inline-block;
-  background-color: #0077cc;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.botao-download:hover {
-  background-color: #005fa3;
-}
-
-form {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 8px;
-  margin-top: 6px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: #005fa3;
-}
+/
