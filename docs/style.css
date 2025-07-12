@@ -85,9 +85,21 @@ h1, h2 {
   margin-bottom: 15px;
 }
 
-a.ebook-link,
-.download-button,
-.whatsapp-button {
+a.botao {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  background-color: #d4af7f;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+a.botao:hover {
+  background-color: #b48b5a;
+  }
+{
   display: block;
   width: fit-content;
   margin: 20px auto;
