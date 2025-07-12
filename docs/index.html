@@ -84,5 +84,15 @@
   <footer>
     <p>&copy; 2025 F.A.S.E. - Todos os direitos reservados.</p>
   </footer>
+  <script>
+  const toggle = document.querySelector('.menu-toggle');
+  const links = document.querySelectorAll('nav a');
+
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      links.forEach(link => link.classList.toggle('show'));
+    });
+  }
+</script>
 </body>
 </html>
