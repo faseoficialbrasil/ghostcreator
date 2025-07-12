@@ -1,14 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Materiais - Fase Oficial Brasil</title>
+<link rel="stylesheet" href="style.css" />
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-  }
+  /* CSS extra só para menu responsivo */
   nav {
     background: #006600;
     display: flex;
@@ -50,56 +49,9 @@
       margin-left: auto;
     }
   }
-  main {
-    padding: 1rem;
-  }
   h1 {
-    color: #006600;
-  }
-  .ebook-link {
-    background-color: #006600;
-    color: white;
-[11/07, 23:07] Chat GPT: padding: 0.7rem 1rem;
-    display: inline-block;
-    margin-top: 1rem;
-    text-decoration: none;
-    border-radius: 4px;
-  }
-  .ebook-link:hover {
-    background-color: #004d00;
+    color: #006600; /* mantém cor verde do tema */
   }
 </style>
 </head>
 <body>
-
-<nav>
-  <a href="#home">Início</a>
-  <a href="#sobre">Sobre Nós</a>
-  <a href="#servicos">Serviços</a>
-  <a href="#materiais" class="active">Cursos e Materiais</a>
-  <a href="#blog">Blog</a>
-  <a href="#contato">Contato</a>
-  <a href="https://faseoficialbrasil.github.io/ghostcreator/ghost_creator_ebook.pdf" target="_blank">📥 Baixar E-book</a>
-  <span class="menu-toggle">&#9776;</span>
-</nav>
-
-<main>
-  <h1>Cursos e Materiais</h1>
-  <p>Confira nosso material disponível para download e fique por dentro dos nossos cursos.</p>
-  <a class="ebook-link" href="https://faseoficialbrasil.github.io/ghostcreator/ghost_creator_ebook.pdf" target="_blank">📥 Baixar E-book Ghost Creator</a>
-  <!-- Aqui você pode acrescentar mais links para outros materiais -->
-</main>
-
-<script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelectorAll('nav a');
-
-  menuToggle.addEventListener('click', () => {
-    navLinks.forEach(link => {
-      link.classList.toggle('show');
-    });
-  });
-</script>
-
-</body>
-</html>
