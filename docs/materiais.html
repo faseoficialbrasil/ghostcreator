@@ -55,3 +55,40 @@
 </style>
 </head>
 <body>
+[11/07, 23:36] Chat GPT: <header>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre Nós</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="materiais.html" class="active">Cursos e Materiais</a>
+    <a href="blog.html">Blog</a>
+    <a href="contato.html">Contato</a>
+    <a href="https://faseoficialbrasil.github.io/ghostcreator/ghost_creator_ebook.pdf" target="_blank">📥 Baixar E-book</a>
+    <span class="menu-toggle">&#9776;</span>
+  </nav>
+</header>
+
+<main class="conteudo">
+  <h1>Cursos e Materiais</h1>
+  <p>Confira nosso material disponível para download e fique por dentro dos nossos cursos.</p>
+  <a class="botao" href="https://faseoficialbrasil.github.io/ghostcreator/ghost_creator_ebook.pdf" target="_blank">📥 Baixar E-book Ghost Creator</a>
+  <!-- Aqui você pode acrescentar mais links para outros materiais -->
+</main>
+
+<footer>
+  <p>© 2025 Pátria e Ação - Todos os direitos reservados</p>
+</footer>
+
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelectorAll('nav a');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.forEach(link => {
+      link.classList.toggle('show');
+    });
+  });
+</script>
+
+</body>
+</html>
