@@ -41,5 +41,15 @@
   <footer>
     <p>© 2025 Marcelo Honorio da Silva| F.A.S.E. – Força de Ação em Segurança Estratégica</p>
   </footer>
+  <script>
+  const toggle = document.querySelector('.menu-toggle');
+  const links = document.querySelectorAll('nav a');
+
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      links.forEach(link => link.classList.toggle('show'));
+    });
+  }
+  </script>
 </body>
 </html>
