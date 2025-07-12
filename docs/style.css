@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,83 +7,154 @@
 
 /* Corpo da página */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, 
-    #E40303 0%, 
-    #FF8C00 20%, 
-    #FFED00 40%, 
-    #008026 60%, 
-    #004DFF 80%, 
-    #750787 100%);
-  color: #002b45; /* azul petróleo */
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #111;
+  color: #e0e0e0;
   line-height: 1.6;
   padding: 20px;
 }
 
-/* Banner principal */
-.secao-banner {
-  background-color: #002b45cc; /* azul petróleo com transparência */
-  color: white;
+/* Cabeçalho e rodapé */
+header, footer {
+  background-color: #000;
+  color: #d4af7f;
+  padding: 20px;
   text-align: center;
-  padding: 40px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  margin-bottom: 30px;
 }
 
-.secao-banner h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  text-transform: uppercase;
+/* Navegação */
+nav {
+  background: #006600;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 15px;
 }
 
-.secao-banner p {
-  font-size: 1.1rem;
-  margin-bottom: 25px;
-}
-
-/* Botão */
-.botao {
-  background-color: #e28f12;
+nav a {
   color: white;
-  padding: 12px 28px;
-  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1rem;
-  transition: background-color 0.3s;
-  display: inline-block;
+  padding: 0.5rem 1rem;
 }
 
-.botao:hover {
-  background-color: #cc7700;
+nav a:hover {
+  background-color: #004d00;
+  border-radius: 4px;
 }
 
-/* Conteúdo principal */
-.conteudo {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-.conteudo h2 {
-[09/07, 17:48] Chat GPT: color: #002b45;
-  margin-bottom: 12px;
+/* Responsivo */
+.menu-toggle {
+  display: none;
   font-size: 1.8rem;
-  border-bottom: 3px solid #e28f12;
-  padding-bottom: 6px;
-  margin-top: 40px;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
 }
 
-.conteudo p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    display: none;
+    width: 100%;
+  }
+[11/07, 23:42] Chat GPT: nav a.show {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
 
-/* Rodapé */
-footer {
-  text-align: center;
-  margin-top: 50px;
-  font-size: 0.9rem;
-  color: #666;
+/* Conteúdo */
+main {
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
 }
+
+h1, h2 {
+  color: #d4af7f;
+  margin-bottom: 15px;
+}
+
+a.ebook-link,
+.download-button,
+.whatsapp-button {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  background-color: #d4af7f;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.ebook-link:hover,
+.download-button:hover,
+.whatsapp-button:hover {
+  background-color: #b48b5a;
+}
+
+/* Formulários */
+form {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #d4af7f;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+```
+
+---
+
+2. *Em cada página HTML da pasta `docs`, no `<head>`, coloque:*
+
+```html
+<link rel="stylesheet" href="style.css">
+```
+
+Assim todas usarão o mesmo visual.
+
+---
+
+3. *Garanta que o JavaScript de menu toggle também esteja em cada página com nav*
+
+Adicione no final do `<body>`:
+
+```html
+<script>
+[11/07, 23:43] Chat GPT: const toggle = document.querySelector('.menu-toggle');
+  const links = document.querySelectorAll('nav a');
+
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      links.forEach(link => link.classList.toggle('show'));
+    });
+  }
+</script>
