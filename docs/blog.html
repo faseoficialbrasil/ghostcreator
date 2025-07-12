@@ -1,88 +1,35 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Blog - Fase Oficial Brasil</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      color: #e0e0e0;
-    }
-    h1, h2 {
-      color: #d4af7f;
-    }
-    article {
-      margin-bottom: 2rem;
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    a.read-more {
-      display: inline-block;
-      margin-top: 15px;
-      background-color: #d4af7f;
-      color: #000;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-    a.read-more:hover {
-      background-color: #b48b5a;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Blog</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="materiais.html">Materiais</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="ghost-creator.html">Ghost Creator</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="sobre.html">Sobre Nós</a>
-    <a href="servicos.html">Serviços</a>
-    <a href="materiais.html">Cursos e Materiais</a>
- <a href="blog.html" class="active">Blog</a>
-    <a href="contato.html">Contato</a>
-    <a href="https://faseoficialbrasil.github.io/ghostcreator/ghost_creator_ebook.pdf" target="_blank">📥 Baixar E-book</a>
-    <span class="menu-toggle">&#9776;</span>
-  </nav>
-</header>
+  <main>
+    <h2>Últimos posts</h2>
+    <article>
+      <h3>Título do Post</h3>
+      <p>Resumo do conteúdo do blog...</p>
+      <a href="#">Leia mais</a>
+    </article>
+  </main>
 
-<main>
-  <article>
-    <h1>Conheça o Ghost Creator: Seu Novo Aliado na Criação de Conteúdos</h1>
-    <p>
-      Está cansado de perder horas tentando criar conteúdos envolventes para suas redes sociais, blogs ou campanhas? O Ghost Creator chegou para revolucionar sua forma de produzir! 
-    </p>
-    <p>
-      Com técnicas avançadas e estratégias testadas, nosso E-book “Ghost Creator” vai te ensinar como atrair e fidelizar seu público de maneira prática e eficiente. 
-    </p>
-    <p>
-      Quer descobrir os segredos para criar conteúdos que realmente convertem? Esse material é o aperitivo perfeito para você começar a transformar sua comunicação hoje mesmo.
-    </p>
-    <a href="https://faseoficialbrasil.github.io/ghostcreator/ghost_creator_ebook.pdf" target="_blank" class="read-more">📥 Baixe o E-book Agora</a>
-  </article>
-</main>
-
-<footer>
-  <p>© 2025 Pátria e Ação - Todos os direitos reservados</p>
-</footer>
-
-<script>
-  const toggle = document.querySelector('.menu-toggle');
-[12/07, 01:44] Chat GPT: const links = document.querySelectorAll('nav a');
-
-  if (toggle) {
-    toggle.addEventListener('click', () => {
-      links.forEach(link => link.classList.toggle('show'));
-    });
-  }
-</script>
-
+  <footer>
+    <p>&copy; 2025 - Meu Site</p>
+  </footer>
 </body>
 </html>
