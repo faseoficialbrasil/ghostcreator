@@ -1,29 +1,62 @@
-<main>
-  <section>
-    <h2>Apresentação</h2>
-    <p>Me chamo <strong>Marcelo Honorio da Silva</strong>, fundador do projeto <em>Fase Oficial Brasil</em>. Sou criador de conteúdo digital com foco em inovação, criatividade e impacto nas redes sociais.</p>
-    <p>Desenvolvi o <strong>Ghost Creator PRO</strong> para ajudar outros criadores a transformarem seus vídeos com efeitos profissionais, mesmo sem conhecimento técnico avançado.</p>
-  </section>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>FASE Oficial Brasil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>FASE Oficial Brasil</h1>
+    <nav>
+      <span class="menu-toggle" onclick="toggleMenu()">☰ Menu</span>
+      <a href="index.html">Início</a>
+      <a href="materiais.html">Materiais</a>
+      <a href="blog.html">Blog</a>
+      <a href="contato.html">Contato</a>
+      <a href="ghost-creator.html">Ghost Creator</a>
+    </nav>
+  </header>
 
-  <section>
-    <h2>Para quem é este e-book?</h2>
-    <ul>
-      <li>Youtubers, streamers e editores iniciantes</li>
-      <li>Pequenos produtores de mídia</li>
-      <li>Jovens que desejam se destacar no mercado digital</li>
-      <li>Entusiastas de vídeo e efeitos visuais</li>
-    </ul>
-    <p>Com experiência prática em edição e engajamento online, o Ghost Creator PRO entrega soluções diretas, criativas e acessíveis para quem busca crescer nas redes.</p>
-    <a class="download-button" href="https://go.hotmart.com/L100784285M" target="_blank">Quero o Ghost Creator PRO</a>
-  </section>
+  <main>
+    <section>
+      <h2>Quem somos</h2>
+      <p>Meu nome é <strong>Marcelo Honorio da Silva</strong>, sou criador de conteúdo digital e fundador do projeto <em>FASE Oficial Brasil</em>. Com foco em inovação e impacto, desenvolvi o <strong>Ghost Creator PRO</strong> para ajudar criadores a transformar seus vídeos com efeitos visuais, mesmo sem conhecimento técnico avançado.</p>
+    </section>
 
-  <section>
-    <h2>Contato e Redes</h2>
-    <p>Fale comigo por e-mail ou redes sociais:</p>
-    <ul>
-      <li>✉️ faseoficialbrasil@gmail.com</li>
-      <li>📱 Instagram: <a href="https://www.instagram.com/fase.oficialbrasil" target="_blank">@fase.oficialbrasil</a></li>
-      <li>🌐 Site: <a href="https://faseoficialbrasil.github.io" target="_blank">faseoficialbrasil.github.io</a></li>
-    </ul>
-  </section>
-</main>
+    <section>
+      <h2>Sobre o E-book</h2>
+      <p>Ideal para youtubers, streamers, editores iniciantes e criadores que querem se destacar no mercado digital com técnicas práticas e acessíveis.</p>
+      <a class="download-button" href="https://go.hotmart.com/L100784285M" target="_blank">Quero acessar o E-book</a>
+    </section>
+
+    <section>
+      <h2>Entre em contato</h2>
+      <p>📧 faseoficialbrasil@gmail.com</p>
+      <p>📱 Instagram: <a href="https://www.instagram.com/fase.oficialbrasil" target="_blank">@fase.oficialbrasil</a></p>
+      <p>🌐 Site oficial: <a href="https://faseoficialbrasil.github.io" target="_blank">faseoficialbrasil.github.io</a></p>
+    </section>
+
+    <section>
+      <h2>Fale diretamente comigo</h2>
+      <form action="https://formspree.io/f/meqyzlqo" method="POST">
+        <input type="text" name="name" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu email" required>
+        <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FASE Oficial Brasil · Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const links = document.querySelectorAll("nav a");
+      links.forEach(link => link.classList.toggle("show"));
+    }
+  </script>
+</body>
+</html>
