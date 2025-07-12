@@ -18,7 +18,6 @@ body {
 header, footer {
   background-color: #000;
   color: #d4af7f;
-  padding: 20px;
   text-align: center;
 }
 
@@ -31,6 +30,7 @@ nav {
   justify-content: center;
   padding: 10px;
   gap: 15px;
+  .menu-toggle
 }
 
 nav a {
@@ -64,7 +64,7 @@ nav a:hover {
     display: none;
     width: 100%;
   }
-[11/07, 23:42] Chat GPT: nav a.show {
+ nav a.show {
     display: block;
   }
 
@@ -129,32 +129,3 @@ form button {
   font-weight: bold;
   cursor: pointer;
 }
-```
-
----
-
-2. *Em cada página HTML da pasta `docs`, no `<head>`, coloque:*
-
-```html
-<link rel="stylesheet" href="style.css">
-```
-
-Assim todas usarão o mesmo visual.
-
----
-
-3. *Garanta que o JavaScript de menu toggle também esteja em cada página com nav*
-
-Adicione no final do `<body>`:
-
-```html
-<script>
-[11/07, 23:43] Chat GPT: const toggle = document.querySelector('.menu-toggle');
-  const links = document.querySelectorAll('nav a');
-
-  if (toggle) {
-    toggle.addEventListener('click', () => {
-      links.forEach(link => link.classList.toggle('show'));
-    });
-  }
-</script>
