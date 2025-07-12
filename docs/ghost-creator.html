@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Ghost Creator</title>
-  .menu {
-  background-color: #101010;
-  padding: 1rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
-  font-family: 'Montserrat', sans-serif;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Criar Fantasma - Ghost Creator</title>
 
-.menu ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
+  <style>
+    body {
+      margin: 0;
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
 
-.menu a {
-  color: #f0f0f0;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
+    .menu {
+      background-color: #101010;
+      padding: 1rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    }
 
-.menu a:hover {
-  color: #ff4f9e;
-}
-  <link rel="stylesheet" href="style.css">
+    .menu ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ff4f9e;
+    }
+
+    .main-content {
+      padding: 7rem 2rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+  </style>
 </head>
+
 <body>
-  <header>
-    <h1>Ghost Creator</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="materiais.html">Materiais</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        <li><a href="ghost-creator.html">Ghost Creator</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="ghost-creator.html">Criar Fantasma</a></li>
+      <li><a href="Materiais.html">Materiais</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
 
-  <main>
-    <h2>Ferramenta em construção</h2>
-    <p>Aqui você poderá criar seu próprio conteúdo fantasmagórico no futuro!</p>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 - Meu Site</p>
-  </footer>
+  <div class="main-content">
+    <h1>Crie Seu Fantasma 👻</h1>
+    <p>Personalize sua criatura sobrenatural com estilo! Aqui você poderá escolher formas, cores, poderes e muito mais.</p>
+    <!-- Dá pra inserir futuros botões ou formulários aqui -->
+  </div>
 </body>
 </html>
