@@ -1,55 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contato | Ghost Creator</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Contato</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Fale com a F.A.S.E.</h1>
+    <h1>Contato</h1>
     <nav>
-    <a href="#home">Início</a>
-    <a href="#sobre">Sobre Nós</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#cursos">Cursos e Materiais</a>
-    <a href="#blog">Blog</a>
-    <a href="#contato">Contato</a>
-    <a href="https://faseoficialbrasil.github.io/ghostcreator/ghost_creator_ebook.pdf" target="_blank">📥 Baixar E-book</a>
-  </nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="materiais.html">Materiais</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="ghost-creator.html">Ghost Creator</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Contato</h2>
-      <form action="https://formspree.io/f/manjzdvq" method="POST">
-        <label for="nome">Nome:</label><br />
-        <input type="text" id="nome" name="nome" required /><br />
+    <h2>Fale comigo</h2>
+    <form>
+      <label>Nome:</label><br>
+      <input type="text"><br><br>
 
-        <label for="email">E-mail:</label><br />
-        <input type="email" id="email" name="_replyto" required /><br />
+      <label>Email:</label><br>
+      <input type="email"><br><br>
 
-        <label for="mensagem">Mensagem:</label><br />
-        <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br />
+      <label>Mensagem:</label><br>
+      <textarea rows="5"></textarea><br><br>
 
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
+      <button type="submit">Enviar</button>
+    </form>
   </main>
 
   <footer>
-    <p>© 2025 Marcelo Honorio da Silva| F.A.S.E. – Força de Ação em Segurança Estratégica</p>
+    <p>&copy; 2025 - Meu Site</p>
   </footer>
-  <script>
-  const toggle = document.querySelector('.menu-toggle');
-  const links = document.querySelectorAll('nav a');
-
-  if (toggle) {
-    toggle.addEventListener('click', () => {
-      links.forEach(link => link.classList.toggle('show'));
-    });
-  }
-  </script>
 </body>
 </html>
