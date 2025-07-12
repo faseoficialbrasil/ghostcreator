@@ -1,33 +1,97 @@
-body {
-  font-family: Arial, sans-serif;
+
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-  background: #333;
+/* Corpo da página */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, 
+    #E40303 0%, 
+    #FF8C00 20%, 
+    #FFED00 40%, 
+    #008026 60%, 
+    #004DFF 80%, 
+    #750787 100%);
+  color: #002b45; /* azul petróleo */
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Banner principal */
+.secao-banner {
+  background-color: #002b45cc; /* azul petróleo com transparência */
   color: white;
-  padding: 1em;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 1em;
+.secao-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
-nav a {
+.secao-banner p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+/* Botão */
+.botao {
+  background-color: #e28f12;
   color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+  display: inline-block;
 }
 
-main {
-  padding: 2em;
+.botao:hover {
+  background-color: #cc7700;
 }
+
+/* Conteúdo principal */
+.conteudo {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.conteudo h2 {
+[09/07, 17:48] Chat GPT: color: #fff;
+text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  margin-bottom: 12px;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #e28f12;
+  padding-bottom: 6px;
+  margin-top: 40px;
+}
+
+.conteudo p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Rodapé */
+
 
 footer {
-  background: #f0f0f0;
-  padding: 1em;
   text-align: center;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #eee; /* cinza bem claro */
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.3); /* fundo preto translúcido */
+  padding: 10px 0;
+  border-radius: 6px;
 }
