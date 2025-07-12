@@ -1,86 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Blog - Fase Oficial Brasil</title>
-  .menu {
-  background-color: #101010;
-  padding: 1rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
-  font-family: 'Montserrat', sans-serif;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghost Creator</title>
 
-.menu ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
+  <style>
+    body {
+      margin: 0;
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
 
-.menu a {
-  color: #f0f0f0;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
+    .menu {
+      background-color: #101010;
+      padding: 1rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    }
 
-.menu a:hover {
-  color: #ff4f9e;
-}
-  <link rel="stylesheet" href="style.css" />
+    .menu ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ff4f9e;
+    }
+
+    .main-content {
+      padding: 7rem 2rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+  </style>
 </head>
+
 <body>
-
-<header>
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="sobre.html">Sobre Nós</a>
-    <a href="servicos.html">Serviços</a>
-    <a href="materiais.html">Cursos e Materiais</a>
- <a href="blog.html" class="active">Blog</a>
-    <a href="contato.html">Contato</a>
-    <a href="https://faseoficialbrasil.github.io/ghostcreator/ghost_creator_ebook.pdf" target="_blank">📥 Baixar E-book</a>
-    <span class="menu-toggle">&#9776;</span>
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="ghost-creator.html">Criar Fantasma</a></li>
+      <li><a href="Materiais.html">Materiais</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
   </nav>
-</header>
 
-<main>
-  <article>
-    <h1>Conheça o Ghost Creator: Seu Novo Aliado na Criação de Conteúdos</h1>
-    <p>
-      Está cansado de perder horas tentando criar conteúdos envolventes para suas redes sociais, blogs ou campanhas? O Ghost Creator chegou para revolucionar sua forma de produzir! 
-    </p>
-    <p>
-      Com técnicas avançadas e estratégias testadas, nosso E-book “Ghost Creator” vai te ensinar como atrair e fidelizar seu público de maneira prática e eficiente. 
-    </p>
-    <p>
-      Quer descobrir os segredos para criar conteúdos que realmente convertem? Esse material é o aperitivo perfeito para você começar a transformar sua comunicação hoje mesmo.
-    </p>
-    <a href="https://go.hotmart.com/L100784285M" target="_blank" class="read-more">📥 Baixe o E-book Agora</a>
-  </article>
-</main>
-
-<footer>
-  <p>© 2025 Pátria e Ação - Todos os direitos reservados</p>
-</footer>
-
-<script>
-  const toggle = document.querySelector('.menu-toggle');
- const links = document.querySelectorAll('nav a');
-
-  if (toggle) {
-    toggle.addEventListener('click', () => {
-      links.forEach(link => link.classList.toggle('show'));
-    });
-  }
-</script>
-
+  <div class="main-content">
+    <h1>Bem-vindo ao Ghost Creator 👻</h1>
+    <p>Este é o início do seu site. Aqui você pode adicionar conteúdo explicativo, imagens, ou até interatividade.</p>
+  </div>
 </body>
 </html>
