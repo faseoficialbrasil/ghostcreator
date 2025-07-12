@@ -1,64 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>FASE Oficial Brasil</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog - Fase Oficial Brasil</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>FASE Oficial Brasil</h1>
-    <nav>
-      <span class="menu-toggle" onclick="toggleMenu()">☰ Menu</span>
-      <a href="index.html">Início</a>
-      <a href="materiais.html">Materiais</a>
-      <a href="blog.html">Blog</a>
-      <a href="contato.html">Contato</a>
-      <a href="ghost-creator.html">Ghost Creator</a>
-    </nav>
-  </header>
 
-  <main>
-    <section>
-      <h2>Quem é Marcelo Honorio da Silva</h2>
-      <p>Sou criador de conteúdo digital com foco em inovação, criatividade e impacto nas redes sociais. Fundador do projeto <strong>FASE Oficial Brasil</strong>, desenvolvi o <strong>Ghost Creator PRO</strong> para ajudar outros criadores a transformar seus vídeos com efeitos profissionais — mesmo sem conhecimento técnico avançado.</p>
-    </section>
+<header>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre Nós</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="materiais.html">Cursos e Materiais</a>
+ <a href="blog.html" class="active">Blog</a>
+    <a href="contato.html">Contato</a>
+    <a href="https://faseoficialbrasil.github.io/ghostcreator/ghost_creator_ebook.pdf" target="_blank">📥 Baixar E-book</a>
+    <span class="menu-toggle">&#9776;</span>
+  </nav>
+</header>
 
-    <section>
-      <h2>Sobre o E-book Ghost Creator PRO</h2>
-      <p>Este material é ideal para criadores digitais, youtubers, streamers e produtores independentes que desejam aprender técnicas práticas de vídeo e se destacar no mundo digital com ferramentas acessíveis e criativas.</p>
-      <a class="download-button" href="https://go.hotmart.com/L100784285M" target="_blank">Acesse o E-book Ghost Creator PRO</a>
-    </section>
+<main>
+  <article>
+    <h1>Conheça o Ghost Creator: Seu Novo Aliado na Criação de Conteúdos</h1>
+    <p>
+      Está cansado de perder horas tentando criar conteúdos envolventes para suas redes sociais, blogs ou campanhas? O Ghost Creator chegou para revolucionar sua forma de produzir! 
+    </p>
+    <p>
+      Com técnicas avançadas e estratégias testadas, nosso E-book “Ghost Creator” vai te ensinar como atrair e fidelizar seu público de maneira prática e eficiente. 
+    </p>
+    <p>
+      Quer descobrir os segredos para criar conteúdos que realmente convertem? Esse material é o aperitivo perfeito para você começar a transformar sua comunicação hoje mesmo.
+    </p>
+    <a href="https://faseoficialbrasil.github.io/ghostcreator/ghost_creator_ebook.pdf" target="_blank" class="read-more">📥 Baixe o E-book Agora</a>
+  </article>
+</main>
 
-    <section>
-      <h2>Redes de contato</h2>
-      <ul>
-        <li>✉️ E-mail: <a href="mailto:faseoficialbrasil@gmail.com">faseoficialbrasil@gmail.com</a></li>
-        <li>📱 Instagram: <a href="https://www.instagram.com/fase.oficialbrasil" target="_blank">@fase.oficialbrasil</a></li>
-        <li>🌐 Site oficial: <a href="https://faseoficialbrasil.github.io" target="_blank">faseoficialbrasil.github.io</a></li>
-      </ul>
-    </section>
+<footer>
+  <p>© 2025 Pátria e Ação - Todos os direitos reservados</p>
+</footer>
 
-    <section>
-      <h2>Fale diretamente comigo</h2>
-      <form action="https://formspree.io/f/meqyzlqo" method="POST">
-        <input type="text" name="name" placeholder="Seu nome" required>
-        <input type="email" name="email" placeholder="Seu email" required>
-        <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+ const links = document.querySelectorAll('nav a');
 
-  <footer>
-    <p>&copy; 2025 FASE Oficial Brasil · Todos os direitos reservados</p>
-  </footer>
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      links.forEach(link => link.classList.toggle('show'));
+    });
+  }
+</script>
 
-  <script>
-    function toggleMenu() {
-      const links = document.querySelectorAll("nav a");
-      links.forEach(link => link.classList.toggle("show"));
-    }
-  </script>
 </body>
-  </html>
+</html>
